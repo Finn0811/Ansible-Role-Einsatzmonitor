@@ -1,0 +1,4 @@
+- name: restart einsatzmonitor
+  service:
+    name: einsatzmonitor
+    state: restarted

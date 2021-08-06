@@ -1,0 +1,15 @@
+[Unit]
+Description=EinsatzMonitor daemon
+PartOf=graphical-session.target
+After=graphical.target
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/opt/einsatzmonitor/einsatzmonitor
+Type=simple
+User=pi
+
+
+[Install]
+#WantedBy=graphical-session.target
+WantedBy=graphical.target
